@@ -39,8 +39,8 @@ const mutations = {
   		
   		state.todos.length = val
   		console.log(state.todos.length)
-  		if(state.todos.lenght <val){
-  			state.todos.length == val
+  		if(state.todos.lenght <val ){
+  			state.todos.length = val
   		}
   	}
 	
@@ -55,13 +55,6 @@ const actions = {
 		}else{
 			alert('请输入内容')
 		}
-	},
-	
-	all1({commit},val){
-		commit('all1',val)
-	},
-	deleall({commit}){
-		commit('deleall2')
 	}
 }
 

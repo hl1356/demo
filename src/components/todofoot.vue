@@ -2,7 +2,7 @@
 	  <div class="todo-footer">
         
         
-         <span> 全部:{{infolist.length}}</span>	
+         <span> 全部:{{todos.length}}</span>	
          	<select v-model="val" @change="change(val)">
 					 <option  value="10">10</option>
 					  <option  value="50">50</option>
@@ -25,7 +25,7 @@
 		},
 		computed:{
 			...mapGetters(['infolist']),
-			...mapState(['viewKey','list1'])
+			...mapState(['viewKey','todos'])
 //				val:{
 //				get(){
 //					return this.list1.forEach(item => item)
